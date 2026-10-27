@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b1c">
+<title>Anandhi | A Little Chaos, A Lot of Love</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="glow glow1"></div><div class="glow glow2"></div>
+<header><a href="#" class="brand">✦ A LITTLE CHAOS <span>/</span> A LOT OF LOVE</a><button id="musicToggle" class="mini">♫ Music: off</button></header>
+<main>
+<section class="hero" id="home">
+  <p class="eyebrow">A VERY IMPORTANT SISTER EVENT · 28 OCTOBER 2026</p>
+  <h1>ANANDHI<span>.</span></h1><h2>The little chaos<br><em>that I love.</em></h2>
+  <p class="intro">Daily fights. Missing clothes. Food missions. Olympic-level sleeping.<br><b>One bond that nothing can replace.</b></p>
+  <div class="countdown"><span id="days">--</span><small>DAYS</small><span id="hours">--</span><small>HOURS</small><span id="minutes">--</span><small>MINUTES</small><span id="seconds">--</span><small>SECONDS</small></div>
+  <p class="hint">Six memory chapters, each with its own passcode — plus one final secret surprise. ♡</p>
+  <button class="gold" id="enterBtn">Explore your birthday chapters ↓</button>
+</section>
+<section class="chapter-menu" id="chapters">
+  <div class="section-head"><p class="eyebrow">YOUR PRIVATE LITTLE UNIVERSE</p><h2>Choose a chapter <em>to unlock.</em></h2><p>Each chapter has its own passcode. Pick one and enter the secret code.</p></div>
+  <div class="cards">
+    <button class="chapter-card" data-chapter="foodie"><span class="emoji">🍕</span><span class="num">CHAPTER 01</span><strong>Foodie Queen</strong><small>Food missions & tasty memories</small><i>Unlock with passcode ↗</i></button>
+    <button class="chapter-card" data-chapter="sleepy"><span class="emoji">😴</span><span class="num">CHAPTER 02</span><strong>Sleeping Beauty</strong><small>Nap champion evidence</small><i>Unlock with passcode ↗</i></button>
+    <button class="chapter-card" data-chapter="cutie"><span class="emoji">🧸</span><span class="num">CHAPTER 03</span><strong>Cutie Pie</strong><small>Her cutest moments</small><i>Unlock with passcode ↗</i></button>
+    <button class="chapter-card" data-chapter="dress"><span class="emoji">👗</span><span class="num">CHAPTER 04</span><strong>Dress-Up Queen</strong><small>Style, smiles & outfit moments</small><i>Unlock with passcode ↗</i></button>
+    <button class="chapter-card" data-chapter="family"><span class="emoji">🏡</span><span class="num">CHAPTER 05</span><strong>Our Family</strong><small>Our people, our memories</small><i>Unlock with passcode ↗</i></button>
+    <button class="chapter-card" data-chapter="sisters"><span class="emoji">🫶</span><span class="num">CHAPTER 06</span><strong>Me & You</strong><small>Akka–thangachi forever</small><i>Unlock with passcode ↗</i></button>
+    <button class="chapter-card secret-card" data-chapter="surprise"><span class="emoji">🎁</span><span class="num">BONUS · SECRET UNLOCK</span><strong>The Final Surprise</strong><small>A little gift from Akka</small><i>Unlock the final surprise ↗</i></button>
+  </div>
+</section>
+<section id="lockPanel" class="lock-panel" hidden>
+  <button id="backBtn" class="text-button">← Back to chapters</button>
+  <div class="lockbox"><div class="lock-icon">✦</div><p class="eyebrow" id="lockNumber">CHAPTER</p><h2 id="lockTitle">Unlock this memory</h2><p id="lockDescription">Only the right passcode opens this chapter.</p>
+  <form id="passForm"><label for="passcode">Your secret passcode</label><input id="passcode" type="password" autocomplete="off" placeholder="Enter passcode" required><button class="gold" type="submit">Unlock chapter ♡</button></form><p id="lockError" class="error" aria-live="polite"></p><p class="micro">Hint: these are playful surprise locks, not secure private storage.</p></div>
+</section>
+<section id="chapterContent" class="chapter-content" hidden>
+  <button id="contentBackBtn" class="text-button">← All chapters</button>
+  <div class="section-head"><p class="eyebrow" id="contentEyebrow"></p><h2 id="contentTitle"></h2><p id="contentIntro"></p></div>
+  <div id="photoGrid" class="photo-grid"></div>
+  <div id="chapterMessage" class="chapter-message"></div>
+  <button class="gold" id="closeChapter">Lock this chapter ♡</button>
+</section>
+<section class="letter-section">
+  <p class="eyebrow">A NOTE FROM YOUR AKKA</p><h2>Things I don’t say <em>enough.</em></h2>
+  <div class="letter"><p>My dearest Anandhi,</p>
+  <p>Unna daily tease pannuvaen, un kooda sanda poduvaen, en dress enga pochu-nu theduvaen. Sometimes we won’t agree on anything — but none of that will ever change how much you mean to me.</p>
+  <p>You are not just my younger sister. You’re a piece of my heart, my built-in best friend, and one of the people I’ll always show up for. Life easy-ah irundhaalum, tough-ah irundhaalum, <b>naan un pakkathula iruppen.</b></p>
+  <p>Keep dreaming, keep laughing, keep being your wonderfully chaotic self. Eat well, sleep well, steal fewer clothes (at least try 😌), and never forget how loved you are.</p>
+  <p class="signoff">Happy Birthday, my little chaos.<br><em>Un Akka, always. ♡</em></p></div>
+</section>
+<section class="finale"><div class="sparkle">✦　✧　✦</div><p class="eyebrow">THE MAIN EVENT</p><h2>Happy Birthday,<br><em>Anandhi!</em></h2><p class="tamil">பிறந்தநாள் வாழ்த்துகள், என் செல்லத் தங்கச்சி!</p><p>May your year be full of good food, peaceful naps, big dreams, belly laughs, and people who love you exactly as you are.</p><button id="wishBtn" class="gold">Make a birthday wish ✨</button><p id="wishMessage" class="wish-message"></p><p class="signoff">Different moods. Same team. Forever. ♡</p></section>
+<div id="photoLightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button id="lightboxClose" class="lightbox-close" aria-label="Close photo">×</button>
+  <img id="lightboxImage" src="" alt="">
+  <p id="lightboxCaption"></p>
+</div>
+</main><footer>MADE WITH LOVE, AND A LITTLE SIBLING DRAMA · ANANDHI 2026</footer>
+<audio id="birthdayAudio" loop preload="none" src="assets/birthday-music.mp3"></audio>
+<script src="script.js"></script>
+</body></html>
